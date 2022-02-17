@@ -9,6 +9,11 @@ html {
   display: flex;
 }
 
+h1 {
+  color: red;
+  text-decoration: underline;
+  font-size: 50px;
+}
 h2 {
   color: black;
 }
