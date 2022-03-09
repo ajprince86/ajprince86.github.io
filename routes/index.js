@@ -13,7 +13,7 @@ router.post(`/sponsors`, controllers.createSponsor);
 router.post(`/conference`, controllers.createConference);
 router.post(`/stadiums`, controllers.createStadium);
 router.get(`/conferences`,controllers.getAllConferences);
-router.get(`/teams`,middleware,controllers.getAllTeams);
+router.get(`/teams`,controllers.getAllTeams);
 router.get(`/stadiums`,controllers.getAllStadiums);
 router.get(`/sponsors`,controllers.getAllSponsors);
 router.put(`/conference/:id`,controllers.updateConference);
