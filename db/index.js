@@ -7,7 +7,7 @@ dotenv.config();
 //   `mongodb://127.0.0.1:27017/footballDatabase`;
 
 mongoose
-  .connect(process.env.MONGODB_URL, {
+  .connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
