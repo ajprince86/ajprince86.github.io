@@ -8,10 +8,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logger(`dev`));
 
-app.use(`/college`, routes );
+app.use(`/`, routes);
 db.on(`error`, console.error.bind(console, `MongoDB connection error`));
 
 app.listen(PORT, () => {
   console.log(`Listening to port ${PORT}`);
 });
-
